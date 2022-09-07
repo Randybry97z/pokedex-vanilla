@@ -1,0 +1,10 @@
+.center{
+    text-align: center;
+    background-color: #00000f;
+    width: 500px;
+    margin: 0 auto;
+}
+.pokemonContainer{
+    color: crimson;
+    height: 250px;
+}

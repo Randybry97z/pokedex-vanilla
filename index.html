@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <section class="center">
     <div id="app">
-        <div class="pokemonContainer">
+        <div class="pokemonContainer" class="inline-block">
             <div class="pokemonName"></div>
             <div class="pokemonNumber"></div>
             <div class="pokemonTypes"></div>
@@ -17,6 +19,15 @@
         </div>
 
     </div>
+    <form class="form">
+        <p>
+        <input type="search" class="input_buscar"
+        placeholder="Nombre"/>
+        </p>
+       
+    </form>
+    </section>
     <script type="module" src="./index.mjs"></script>
+    
 </body>
 </html>
