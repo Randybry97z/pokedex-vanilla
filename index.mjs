@@ -3,7 +3,7 @@ import {Pokemon} from './components/pokemon.js'
 let container = document.getElementById('app')
 let pokemonObject = new Pokemon()
 
-let pokemonData = Promise.resolve(pokemonObject.getOnePokemon('pikachu'))
+let pokemonData = Promise.resolve(pokemonObject.getOnePokemon('25'))
 
 pokemonData.then((data) => {
     const pokemonName = container.querySelector('.pokemonName')

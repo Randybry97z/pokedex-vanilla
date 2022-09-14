@@ -1,4 +1,4 @@
-import { getAllPokemon, getOnePokemon } from '../utils/getData.js'
+const { getAllPokemon, getOnePokemon } = require('../utils/getData.js')
 
 export class Pokemon {
     __construct(){
@@ -9,7 +9,11 @@ export class Pokemon {
         return 'Hola test'
     }
 
-    getOnePokemon(pokemonName){
-        return getOnePokemon(pokemonName)
+    /**
+     * @param {string} pokemonId
+     * @returns {Promise} Promise object represents the data obtained from the PokeAPI
+    */
+    getOnePokemon(pokemonId){
+        return getOnePokemon(pokemonId)
     }
 }
