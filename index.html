@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <section class="center">
-    <div id="app">
-        <div class="pokemonContainer" class="inline-block">
-            <div class="pokemonName"></div>
-            <div class="pokemonNumber"></div>
-            <div class="pokemonTypes"></div>
-            <div class="pokemonImage"></div>
-
+      <div id="app">
+        <div class="pokedex">
+          <div class="buttons center">
+            <div class="button buttonUp"></div>
+            <div class="button buttonDown"></div>
+          </div>
+          <div class="pokemonInfo">
+              <div class="pokemonContainer center inline-block">
+                <div class="pokemonName"></div>
+                <div class="pokemonImage"></div>
+                <div class="pokemonNumber"></div>
+                <div class="pokemonTypes"></div>
+                <form class="form">
+                  <p>
+                    <input
+                      type="search"
+                      class="input_buscar"
+                      placeholder="Nombre"
+                    />
+                  </p>
+                </form>
+              </div>
+          </div>
         </div>
-
-    </div>
-    <form class="form">
-        <p>
-        <input type="search" class="input_buscar"
-        placeholder="Nombre"/>
-        </p>
-       
-    </form>
+      </div>
     </section>
     <script type="module" src="./index.mjs"></script>
-    
-</body>
+  </body>
 </html>

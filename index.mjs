@@ -15,7 +15,7 @@ pokemonData.then((data) => {
     pokemonNumber.innerHTML += `<h4>${data.id}</h4>`
     data.types.map((dataTypes, idx)=> {
         const {type} = dataTypes
-        pokemonTypes.innerHTML += `<span id=${type.name}>${type.name}</span>`
+        pokemonTypes.innerHTML += `<span class='pokemonTypeCard ${type.name}'>${type.name}</span> &nbsp;`
     })
-    pokemonImage.innerHTML += `<img src="${data.sprites['front_default']}" class="pokemonImageElement" />`
+    pokemonImage.innerHTML += `<img src="${data.sprites['front_shiny']}" class="pokemonImageElement" />`
 })
